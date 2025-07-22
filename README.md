@@ -4,6 +4,8 @@
 [![PyPI](https://img.shields.io/pypi/v/dash-console-filter-plugin.svg?color=dark-green)](https://pypi.org/project/dash-console-filter-plugin/)
 [![Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
 
+English | [简体中文](./README-zh_CN.md)
+
 Console message filtering plugin for Dash applications using Dash Hooks. This plugin allows you to filter specific error messages in the browser console.
 
 ## Installation
@@ -24,6 +26,7 @@ from dash_console_filter_plugin import setup_console_filter_plugin
 setup_console_filter_plugin(keywords=["test warning message"])
 
 app = dash.Dash(__name__)
+
 # Rest of your app code...
 ```
 
@@ -43,6 +46,6 @@ python example.py
 
 This function enables the console message filtering feature for your Dash application.
 
-| Parameter         | Type      | Default | Description                                                                                                           |
-| ----------------- | --------- | ------- | --------------------------------------------------------------------------------------------------------------------- |
-| `filter_patterns` | List[str] | None    | List of keywords to filter, messages containing any of these keywords in the console of the browser will be filtered. |
+| Parameter  | Type      | Default | Description                                                                                                           |
+| ---------- | --------- | ------- | --------------------------------------------------------------------------------------------------------------------- |
+| `keywords` | List[str] | None    | List of keywords to filter, messages containing any of these keywords in the console of the browser will be filtered. |
